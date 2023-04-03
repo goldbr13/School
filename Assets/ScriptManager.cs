@@ -7,7 +7,7 @@ using UnityEngine.SocialPlatforms.Impl;
 
 public class ScriptManager : MonoBehaviour
 {
-    private string[] script = new string[] { "Teacher: Hello students today we will present your speaches on civilizations. Ok lets have our presenter discussing egypt civilization come up first!",
+    private string[] script = new string[] { "Teacher: Hello students today we will present your speeches on civilizations. Ok lets have our presenter discussing egypt civilization come up first!",
         "Student [inner thoughts]: Oh my gosh that’s me! I’m first?! But what if I’m not ready?!",
         "Student: My presentation is on the factors that make egypt is a civilization. One factor is record keeping. The Egyptians created a system of hiero hei herio...",
         "Student: Another factor is they would use pictures to represent ideas or whole words. They also had new tools and techniques that were made to solve problems. Some examples of advanced technologies were uh umm uh...",
