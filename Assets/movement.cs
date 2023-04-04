@@ -5,7 +5,7 @@ using UnityEngine;
 public class movement : MonoBehaviour
 {
     Animator anim;
-    private bool isAnimationFinished = false;
+    public bool isAnimationFinished = false;
     private Vector3 translation = new Vector3(0, 0, 5);
 
     void Start()

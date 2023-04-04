@@ -21,7 +21,7 @@ public class ScriptManager : MonoBehaviour
     "Mentally applaud yourself for facing your fears", "Question your performance"};
 
     private int pos = 0;
-    private int score = 0;
+    //private int score = 0;
 
     public TMP_Text dialogue;// make this private and get through game component!!
     public TMP_Text prompt;// make this private and get through game component!!
@@ -32,19 +32,39 @@ public class ScriptManager : MonoBehaviour
     private GameObject dialogueBox;
     private GameObject promptBox;
 
-    
+    public movement movementScript;
+    private Camera presentation;
+    private Camera seated;
+
+    public GameObject nextButton;
 
     void Start()
     {
         dialogueBox = GameObject.Find("TextBox");
         promptBox = GameObject.Find("Choices");
+        nextButton = GameObject.Find("NextButton");
+        
         promptBox.SetActive(false);
         dialogue.text = script[pos];
+
+        GameObject cameraObject1 = GameObject.Find("PresentCamera");
+        GameObject cameraObject2 = GameObject.Find("SittingCamera");
+        presentation = cameraObject1.GetComponent<Camera>();
+        seated = cameraObject2.GetComponent<Camera>();
+        presentation.enabled = false;
+        seated.enabled = true;
+
+
     }
 
     // Update is called once per frame
     void Update()
     {
+        if(pos == 1){
+            nextButton.SetActive(false);
+
+        }
+        SwitchCameras();
         if (pos == 3)
         {
             // Hide dialogue box
@@ -93,8 +113,17 @@ public class ScriptManager : MonoBehaviour
             choice2.text = choices[10];
             choice3.text = choices[11];
         }
-
+        
         //Display dialogue if arrow is clicked increment pos and display again
+    }
+
+    void SwitchCameras() {
+         
+        if (movementScript.isAnimationFinished) {
+            presentation.enabled = true;
+            seated.enabled = false;
+            nextButton.SetActive(true);
+        }
     }
 
     public void OnClick()
