@@ -67,6 +67,8 @@ public class ScriptManager : MonoBehaviour
         SwitchCameras();
         if (pos == 3)
         {
+            nextButton.SetActive(true);
+
             // Hide dialogue box
             dialogueBox.SetActive(false);
             // Display option box
