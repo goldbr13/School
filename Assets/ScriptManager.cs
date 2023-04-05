@@ -21,13 +21,14 @@ public class ScriptManager : MonoBehaviour
     "Mentally applaud yourself for facing your fears", "Question your performance"};
 
     private int pos = 0;
-    //private int score = 0;
+    private int score = 0;
 
     public TMP_Text dialogue;// make this private and get through game component!!
     public TMP_Text prompt;// make this private and get through game component!!
     public Text choice1;// make this private and get through game component!!
     public Text choice2;// make this private and get through game component!!
     public Text choice3;// make this private and get through game component!!
+    public TMP_Text scoreText;// make this private and get through game component!!
 
     private GameObject dialogueBox;
     private GameObject promptBox;
@@ -35,6 +36,7 @@ public class ScriptManager : MonoBehaviour
     public movement movementScript;
     private Camera presentation;
     private Camera seated;
+    private int enabler = 0;
 
     public GameObject nextButton;
 
@@ -43,6 +45,7 @@ public class ScriptManager : MonoBehaviour
         dialogueBox = GameObject.Find("TextBox");
         promptBox = GameObject.Find("Choices");
         nextButton = GameObject.Find("NextButton");
+        scoreText.text = "Score: 0";
         
         promptBox.SetActive(false);
         dialogue.text = script[pos];
@@ -60,12 +63,12 @@ public class ScriptManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(pos == 1){
+        if(pos == 1 && enabler == 0){
             nextButton.SetActive(false);
-
+            enabler++;
         }
         SwitchCameras();
-        if (pos == 3)
+        if (pos == 3 && enabler == 1)
         {
             nextButton.SetActive(true);
 
@@ -78,8 +81,9 @@ public class ScriptManager : MonoBehaviour
             choice1.text = choices[0];
             choice2.text = choices[1];
             choice3.text = choices[2];
+            enabler++;
         }
-        else if (pos == 4)
+        else if (pos == 4 && enabler == 2)
         {
             // Hide dialogue box
             dialogueBox.SetActive(false);
@@ -90,8 +94,9 @@ public class ScriptManager : MonoBehaviour
             choice1.text = choices[3];
             choice2.text = choices[4];
             choice3.text = choices[5];
+            enabler++;
         }
-        else if (pos == 6)
+        else if (pos == 6 && enabler == 3)
         {
             // Hide dialogue box
             dialogueBox.SetActive(false);
@@ -102,8 +107,9 @@ public class ScriptManager : MonoBehaviour
             choice1.text = choices[6];
             choice2.text = choices[7];
             choice3.text = choices[8];
+            enabler++;
         }
-        else if (pos == 7)
+        else if (pos == 7 && enabler == 4)
         {
             // Hide dialogue box
             dialogueBox.SetActive(false);
@@ -114,6 +120,7 @@ public class ScriptManager : MonoBehaviour
             choice1.text = choices[9];
             choice2.text = choices[10];
             choice3.text = choices[11];
+            enabler++;
         }
         
         //Display dialogue if arrow is clicked increment pos and display again
@@ -128,13 +135,30 @@ public class ScriptManager : MonoBehaviour
         }
     }
 
-    public void OnClick()
+    public void OnNext()
     {
-        if(pos + 1 > script.Length)
+        if (pos + 1 > script.Length)
         {
-            //remove next button
+            nextButton.SetActive(false);
         }
-        pos++;
-        dialogue.text = script[pos];
+        else
+        {
+            pos++;
+            dialogue.text = script[pos];
+        }
+    }
+
+    public void OnRight()
+    {
+        score++;
+        scoreText.text = "Score: " + score;
+        promptBox.SetActive(false);
+        dialogueBox.SetActive(true);
+    }
+
+    public void OnWrong()
+    {
+        promptBox.SetActive(false);
+        dialogueBox.SetActive(true);
     }
 }
