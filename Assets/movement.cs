@@ -12,7 +12,7 @@ public class movement : MonoBehaviour
     {
         anim = GetComponent<Animator>();
         anim.SetBool("idle", false);
-        Invoke("NotWalking", 39);
+        Invoke("NotWalking", 24);
     }
 
     void Walking()
