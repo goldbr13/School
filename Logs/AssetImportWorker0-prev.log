@@ -2,11 +2,11 @@ Unity Editor version:    2021.3.16f1 (4016570cf34f)
 Branch:                  2021.3/staging
 Build type:              Release
 Batch mode:              YES
-macOS version:           Version 11.7.4 (Build 20G1120)
+macOS version:           Version 11.6.5 (Build 20G527)
 Darwin version:          20.6.0
 Architecture:            x86_64
 Running under Rosetta:   NO
-Available memory:        16384 MB
+Available memory:        8192 MB
 Using pre-set license
 Pro License: YES
 
@@ -18,13 +18,19 @@ COMMAND LINE ARGUMENTS:
 -name
 AssetImportWorker0
 -projectPath
-/Users/paulaarroyave/Desktop/Project2/School
+/Users/valerie/Desktop/School
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
+<<<<<<< HEAD
 61787
 Successfully changed project path to: /Users/paulaarroyave/Desktop/Project2/School
 /Users/paulaarroyave/Desktop/Project2/School
+=======
+49649
+Successfully changed project path to: /Users/valerie/Desktop/School
+/Users/valerie/Desktop/School
+>>>>>>> 6cf7e9646a486fd347805be11cc4b8d812eb6ff5
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
     "memorysetup-bucket-allocator-granularity=16"
     "memorysetup-bucket-allocator-bucket-count=8"
@@ -54,30 +60,43 @@ Successfully changed project path to: /Users/paulaarroyave/Desktop/Project2/Scho
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
+<<<<<<< HEAD
 Player connection [4831985152] Host "[IP] 159.91.88.159 [Port] 0 [Flags] 2 [Guid] 1644969339 [EditorId] 1644969339 [Version] 1048832 [Id] OSXEditor(0,MacBook-Pro-4.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
 Player connection [4831985152] Host "[IP] 159.91.88.159 [Port] 0 [Flags] 2 [Guid] 1644969339 [EditorId] 1644969339 [Version] 1048832 [Id] OSXEditor(0,MacBook-Pro-4.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
 Refreshing native plugins compatible for Editor in 119.77 ms, found 2 plugins.
+=======
+Player connection [4803575296] Host "[IP] 159.91.102.234 [Port] 0 [Flags] 2 [Guid] 4200896528 [EditorId] 4200896528 [Version] 1048832 [Id] OSXEditor(0,MacBook-Pro-2.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [4803575296] Host "[IP] 159.91.102.234 [Port] 0 [Flags] 2 [Guid] 4200896528 [EditorId] 4200896528 [Version] 1048832 [Id] OSXEditor(0,MacBook-Pro-2.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+Refreshing native plugins compatible for Editor in 106.77 ms, found 2 plugins.
+>>>>>>> 6cf7e9646a486fd347805be11cc4b8d812eb6ff5
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.16f1 (4016570cf34f)
 [Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/2021.3.16f1/Unity.app/Contents/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path /Users/paulaarroyave/Desktop/Project2/School/Assets
+[Subsystems] Discovering subsystems at path /Users/valerie/Desktop/School/Assets
 GfxDevice: creating device client; threaded=0; jobified=0
-Color LCD preferred device: Intel(R) Iris(TM) Plus Graphics (low power)
+Color LCD preferred device: Intel(R) Iris(TM) Plus Graphics 645 (low power)
 Metal devices available: 1
-0: Intel(R) Iris(TM) Plus Graphics (low power)
-Using device Intel(R) Iris(TM) Plus Graphics (low power)
-Initializing Metal device caps: Intel(R) Iris(TM) Plus Graphics
+0: Intel(R) Iris(TM) Plus Graphics 645 (low power)
+Using device Intel(R) Iris(TM) Plus Graphics 645 (low power)
+Initializing Metal device caps: Intel(R) Iris(TM) Plus Graphics 645
 Initialize mono
 Mono path[0] = '/Applications/Unity/Hub/Editor/2021.3.16f1/Unity.app/Contents/Managed'
 Mono path[1] = '/Applications/Unity/Hub/Editor/2021.3.16f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit-macos'
 Mono config path = '/Applications/Unity/Hub/Editor/2021.3.16f1/Unity.app/Contents/MonoBleedingEdge/etc'
+<<<<<<< HEAD
 Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56943
+=======
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56175
+>>>>>>> 6cf7e9646a486fd347805be11cc4b8d812eb6ff5
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: /Applications/Unity/Hub/Editor/2021.3.16f1/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: /Applications/Unity/Hub/Editor/2021.3.16f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
+<<<<<<< HEAD
 Registered in 0.011875 seconds.
 Native extension for OSXStandalone target not found
 Native extension for WebGL target not found
@@ -88,10 +107,23 @@ Mono: successfully reloaded assembly
 Domain Reload Profiling:
 	ReloadAssembly (1211ms)
 		BeginReloadAssembly (207ms)
+=======
+Registered in 0.003915 seconds.
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 89.19 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.906 seconds
+Domain Reload Profiling:
+	ReloadAssembly (906ms)
+		BeginReloadAssembly (119ms)
+>>>>>>> 6cf7e9646a486fd347805be11cc4b8d812eb6ff5
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
+<<<<<<< HEAD
 			CreateAndSetChildDomain (2ms)
 		EndReloadAssembly (682ms)
 			LoadAssemblies (208ms)
@@ -107,18 +139,40 @@ Domain Reload Profiling:
 				BeforeProcessingInitializeOnLoad (1ms)
 				ProcessInitializeOnLoadAttributes (178ms)
 				ProcessInitializeOnLoadMethodAttributes (54ms)
+=======
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (625ms)
+			LoadAssemblies (120ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (170ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (43ms)
+			SetupLoadedEditorAssemblies (343ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (9ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (89ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (184ms)
+				ProcessInitializeOnLoadMethodAttributes (59ms)
+>>>>>>> 6cf7e9646a486fd347805be11cc4b8d812eb6ff5
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
+<<<<<<< HEAD
 Registered in 0.013000 seconds.
+=======
+Registered in 0.010332 seconds.
+>>>>>>> 6cf7e9646a486fd347805be11cc4b8d812eb6ff5
 Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image /Users/paulaarroyave/Desktop/Project2/School/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image /Users/paulaarroyave/Desktop/Project2/School/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
+Symbol file LoadedFromMemory doesn't match image /Users/valerie/Desktop/School/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image /Users/valerie/Desktop/School/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
 Native extension for OSXStandalone target not found
 Native extension for WebGL target not found
+<<<<<<< HEAD
 Refreshing native plugins compatible for Editor in 0.56 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
@@ -126,10 +180,20 @@ Mono: successfully reloaded assembly
 Domain Reload Profiling:
 	ReloadAssembly (1637ms)
 		BeginReloadAssembly (136ms)
+=======
+Refreshing native plugins compatible for Editor in 0.77 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.443 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1444ms)
+		BeginReloadAssembly (142ms)
+>>>>>>> 6cf7e9646a486fd347805be11cc4b8d812eb6ff5
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (6ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
+<<<<<<< HEAD
 			CreateAndSetChildDomain (36ms)
 		EndReloadAssembly (1330ms)
 			LoadAssemblies (162ms)
@@ -138,10 +202,21 @@ Domain Reload Profiling:
 			ReleaseScriptCaches (1ms)
 			RebuildScriptCaches (73ms)
 			SetupLoadedEditorAssemblies (613ms)
+=======
+			CreateAndSetChildDomain (40ms)
+		EndReloadAssembly (1144ms)
+			LoadAssemblies (125ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (423ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (70ms)
+			SetupLoadedEditorAssemblies (466ms)
+>>>>>>> 6cf7e9646a486fd347805be11cc4b8d812eb6ff5
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (6ms)
 				SetLoadedEditorAssemblies (1ms)
 				RefreshPlugins (1ms)
+<<<<<<< HEAD
 				BeforeProcessingInitializeOnLoad (81ms)
 				ProcessInitializeOnLoadAttributes (478ms)
 				ProcessInitializeOnLoadMethodAttributes (45ms)
@@ -149,10 +224,20 @@ Domain Reload Profiling:
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (7ms)
+=======
+				BeforeProcessingInitializeOnLoad (92ms)
+				ProcessInitializeOnLoadAttributes (327ms)
+				ProcessInitializeOnLoadMethodAttributes (37ms)
+				AfterProcessingInitializeOnLoad (2ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
+>>>>>>> 6cf7e9646a486fd347805be11cc4b8d812eb6ff5
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Launching external process: /Applications/Unity/Hub/Editor/2021.3.16f1/Unity.app/Contents/Tools/UnityShaderCompiler
+<<<<<<< HEAD
 Launched and connected shader compiler UnityShaderCompiler after 0.04 seconds
 Refreshing native plugins compatible for Editor in 0.89 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
@@ -160,6 +245,15 @@ Unloading 3378 Unused Serialized files (Serialized files now loaded: 0)
 Unloading 25 unused Assets / (41.7 KB). Loaded Objects now: 3843.
 Memory consumption went from 114.8 MB to 114.8 MB.
 Total: 18.475139 ms (FindLiveObjects: 5.553844 ms CreateObjectMapping: 5.013592 ms MarkObjects: 7.750169 ms  DeleteObjects: 0.155050 ms)
+=======
+Launched and connected shader compiler UnityShaderCompiler after 0.03 seconds
+Refreshing native plugins compatible for Editor in 0.62 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3378 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 25 unused Assets / (41.7 KB). Loaded Objects now: 3843.
+Memory consumption went from 114.9 MB to 114.9 MB.
+Total: 3.909215 ms (FindLiveObjects: 0.342698 ms CreateObjectMapping: 0.288433 ms MarkObjects: 3.178141 ms  DeleteObjects: 0.099046 ms)
+>>>>>>> 6cf7e9646a486fd347805be11cc4b8d812eb6ff5
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -173,6 +267,7 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
+<<<<<<< HEAD
   Time since last request: 503339.998574 seconds.
   path: Assets/f_gestic_talk_self-assured_01.max.fbx
   artifactKey: Guid(7a16fc0cd3a944d95ba816a56af7f38a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
@@ -303,3 +398,15 @@ Received Import Request.
   path: Assets/ScriptManager.cs
   artifactKey: Guid(6b9c56649e44048ada8b4f6e833aae86) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets/ScriptManager.cs using Guid(6b9c56649e44048ada8b4f6e833aae86) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2dd9cc95e568237fb860a19114cd1902') in 0.002891 seconds 
+=======
+  Time since last request: 461.742476 seconds.
+  path: Assets/Materials/wooden_desk.mat
+  artifactKey: Guid(858d4e626124b4244ac2ea85ffe866ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/wooden_desk.mat using Guid(858d4e626124b4244ac2ea85ffe866ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a4e71795eca7600c44f312accba4bde4') in 1.990916 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000099 seconds.
+  path: Assets/Materials/mteal.mat
+  artifactKey: Guid(842f99ccc89ad44f89fe442c66d8320b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/mteal.mat using Guid(842f99ccc89ad44f89fe442c66d8320b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '52951872c53d54fed310936b4ec8bbd9') in 0.036971 seconds 
+>>>>>>> 6cf7e9646a486fd347805be11cc4b8d812eb6ff5
