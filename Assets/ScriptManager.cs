@@ -14,7 +14,7 @@ public class ScriptManager : MonoBehaviour
         "Student: Additionally, they also has complex institutions which are long-lasting pattern of organization in a community.",
         "Teacher: Could please speak up we can’t hear you in the back!",
         "The last factor is they had advanced cities such as Memphis and Thebes."};
-    private string[] prompts = new string[] {"You just stuttered! What do you do next?", "You lost your train of thought! What do you do next?", "You've been told to speak up! What do you do next?",
+    private string[] prompts = new string[] {"You're up first! What will you do?", "You just stuttered! What do you do next?", "You lost your train of thought! What do you do next?", "You've been told to speak up! What do you do next?",
         "You've completed your speech! What do you do?"};
     private string[] choices = new string[] { "Envision success", "Let thoughts overwhelm you", "Think negative thoughts", "Take a deep breath and recollect", "Discourage yourself", "Get upset",
     "Review notecards", "BS", "Discourage yourself", "Take a deep breath, articulate and project", "Feel intimidated and speak softer", "Feel humiliated", "Criticize yourself on your performanc",
@@ -37,6 +37,7 @@ public class ScriptManager : MonoBehaviour
     private Camera presentation;
     private Camera seated;
     private int enabler = 0;
+    private int index = 0;
 
     public GameObject nextButton;
 
@@ -63,12 +64,12 @@ public class ScriptManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(pos == 1 && enabler == 0){
+        /*if(pos == 2 && enabler == 0){
             nextButton.SetActive(false);
             enabler++;
-        }
+        }*/
         SwitchCameras();
-        if (pos == 3 && enabler == 1)
+        if (pos == 2 && enabler == 0)
         {
             nextButton.SetActive(true);
 
@@ -76,12 +77,31 @@ public class ScriptManager : MonoBehaviour
             dialogueBox.SetActive(false);
             // Display option box
             promptBox.SetActive(true);
-            prompt.text = prompts[0];
+            prompt.text = prompts[index];
             // Choices
             choice1.text = choices[0];
             choice2.text = choices[1];
-            choice3.text = choices[2];
+            choice3.text = choices[2]; 
+            // added this maybe remove
+            nextButton.SetActive(false);
             enabler++;
+            index++;
+        }
+        else if (pos == 3 && enabler == 1)
+        {
+            //nextButton.SetActive(true);
+
+            // Hide dialogue box
+            dialogueBox.SetActive(false);
+            // Display option box
+            promptBox.SetActive(true);
+            prompt.text = prompts[index];
+            // Choices
+            choice1.text = choices[3];
+            choice2.text = choices[4];
+            choice3.text = choices[5];
+            enabler++;
+            index++;
         }
         else if (pos == 4 && enabler == 2)
         {
@@ -89,38 +109,41 @@ public class ScriptManager : MonoBehaviour
             dialogueBox.SetActive(false);
             // Display option box
             promptBox.SetActive(true);
-            prompt.text = prompts[1];
-            // Choices
-            choice1.text = choices[3];
-            choice2.text = choices[4];
-            choice3.text = choices[5];
-            enabler++;
-        }
-        else if (pos == 6 && enabler == 3)
-        {
-            // Hide dialogue box
-            dialogueBox.SetActive(false);
-            // Display option box
-            promptBox.SetActive(true);
-            prompt.text = prompts[2];
+            prompt.text = prompts[index];
             // Choices
             choice1.text = choices[6];
             choice2.text = choices[7];
             choice3.text = choices[8];
             enabler++;
+            index++;
         }
-        else if (pos == 7 && enabler == 4)
+        else if (pos == 7 && enabler == 3)
         {
             // Hide dialogue box
             dialogueBox.SetActive(false);
             // Display option box
             promptBox.SetActive(true);
-            prompt.text = prompts[3];
+            prompt.text = prompts[index];
             // Choices
             choice1.text = choices[9];
             choice2.text = choices[10];
             choice3.text = choices[11];
             enabler++;
+            index++;
+        }
+        else if (pos == 8 && enabler == 4)
+        {
+            // Hide dialogue box
+            dialogueBox.SetActive(false);
+            // Display option box
+            promptBox.SetActive(true);
+            prompt.text = prompts[index];
+            // Choices
+            choice1.text = choices[12];
+            choice2.text = choices[13];
+            choice3.text = choices[14];
+            enabler++;
+            index++;
         }
         
         //Display dialogue if arrow is clicked increment pos and display again
